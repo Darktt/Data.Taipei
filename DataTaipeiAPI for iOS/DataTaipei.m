@@ -20,6 +20,11 @@ static DataTaipei *singletion = nil;
 
 @implementation DataTaipei
 
++ (void)load
+{
+    [DataTaipei _shareData];
+}
+
 + (void)setRIDKey:(NSString * __nonnull)RIDKey
 {
     DataTaipei *dataTaipei = [DataTaipei _shareData];
